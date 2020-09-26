@@ -1,0 +1,234 @@
+@font-face{
+    font-family:'space';
+    src:url('/fuentes/nasalization-rg.ttf');
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+   background-color: rgb(0, 0, 50);
+   padding: 50px;
+}
+h1,h2,h3,h4,p,li {
+   font-family: space;
+   color: white;
+}
+header{
+    width: 100%;
+    background-color:black;
+    padding: 20px;
+    text-align: center;
+    color:whitesmoke;    
+}
+
+/*Menú*/
+nav {
+    width: 100%;
+    /*padding: 2px;
+    margin: 10px;*/
+    display: block;
+    text-align: center;
+    background-color:gray;
+}
+
+nav ul li{
+    display: inline-flex;
+    
+}
+nav > ul > li > a{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+nav a:hover{
+    background-color: black;
+    color: white;
+}
+
+/*Pie de pagina*/
+footer{
+    width: 100%;
+    background-color:dimgrey;
+   /* padding: 5px;*/
+    text-align: center;
+    /*margin:10px*/
+}
+.flex-container {
+  display: flex;  
+}
+#mapapie{
+    flex-grow: 0;
+}
+#info{
+    flex-grow: 1;
+}
+#iconospie{
+    flex-grow: 1;
+    margin: 20px;
+}
+.listapie{
+    display:flow-root;
+    text-align: left;
+    font-size: 15px;
+    font-family: Roboto;
+    color: white;
+}
+.textopie{
+    font-size: 15px;
+    color:white;
+    font-family: Roboto;
+}
+#legal{
+    background-color: black;
+    font-family: Roboto;
+    font-size: 12px;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+/*Elementos de la pagina*/
+section{
+    background-color: black;
+    /*padding: 50px;*/
+}
+#link{
+    display:inline-grid;
+}
+.icono{
+    font-size: 30px;
+    margin: 20px;
+}
+/*Mapas*/
+iframe{
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+}
+
+/*Imagenes*/
+img{display:block;
+    margin:auto;
+    width: 100%;
+    
+}
+
+/*Texto*/
+#planet{
+    color:white;
+    text-align: center;
+}
+
+/*flex planetas*/
+
+.contenedor-planetas{
+    display:grid;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Formulario*/
+#formulario{
+    background-color:gainsboro;
+    width: 100%;
+    padding: 50px;
+    font-family: Helvetica;
+    text-align:center;
+    display:grid;
+    justify-content: center;
+}
+
+
+/*RESPONSIVE -- > Cuando sea menor a 768px */
+@media (max-width:768px){
+    
+    
+    nav ul{
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li{
+        display:grid;
+        width: 100%;
+        
+    }
+    nav ul li a{
+        display:grid;
+        text-align: center;
+    }
+    
+    header{
+        display:block;
+        font-size: 10px;
+    }
+    
+    #mapapie,#info{
+    display: none;
+    }
+}
+
+/* ANIMACION*/
+
+.animacion{
+    
+    animation-name: pulsar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+@keyframes pulsar{
+    from {
+        transform: scale(1)
+    }
+    to{
+        transform: scale(1.1)
+    }
+}
+
+/*  TRANSICION  */
+
+.contenedor-novedades{
+    display:inline;
+    margin: 5px;
+}
+
+.transicion{
+      width: 200px;
+      transition-property: width;
+      transition-duration: 2s;   
+}
+
+.transicion:hover{
+    justify-content: center;
+    width: 90%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
