@@ -114,7 +114,7 @@ iframe{
 /*Imagenes*/
 img{display:block;
     margin:auto;
-    width: 100%;
+    width: 60%;
     
 }
 
@@ -171,6 +171,9 @@ img{display:block;
     #mapapie,#info{
     display: none;
     }
+    img{display:block;
+    margin:auto;
+    width: 100%;
 }
 
 /* ANIMACION*/
